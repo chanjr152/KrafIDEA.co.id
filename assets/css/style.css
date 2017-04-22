@@ -191,15 +191,23 @@ h1.b1,h2.b2,h3.b3 {
 .skyblue{
 	float:left;
 }
+/*tambahan chandra untuk filter*/
 .filter1{
-	width: 100%;
 	position: relative;
 	width: 100%;
 	display: block;
 }
-.filter1  ul{
+.filter1 >  ul:first-child{
 	margin: auto;
+	/*left: 30%;*/
 	max-width: 38%;
+}
+.filter1 > ul > li > a {
+	color: #000;
+}
+.container-filter1 > .grid:hover .mepanel {
+	display: block;
+	opacity: 0.9;
 }
 .container-filter1{
 	position: relative;
@@ -208,8 +216,50 @@ h1.b1,h2.b2,h3.b3 {
 	/*float: left;*/
 	list-style: none;
 }
-.container-filter1 > li{
-	float: left;
+.container-filter1 .mepanel{
+	position: absolute;
+	display: none;
+	background: #fff;
+	width: -moz-max-content;
+	top: 60px;
+	/*left: 4%;*/
+	z-index: 99;
+	/*padding: 20px 30px 20px;*/
+	border: solid 1px #ccc;
+	opacity: 0.8;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+.container-filter1 .mepanel .row{
+	margin: 10px;
+}
+.container-filter1 .grid{
+	position: relative;
+    display: inline-block;
+}
+.container-filter1 .mepanel tbody{
+   border: 1px solid #c0c0c0;
+   display: block;
+   padding: 20px 0px 0px 10px; 
+   height: 100px;
+	overflow-y: scroll;
+}
+.container-filter1 .mepanel thead{
+	border: 1px solid #c0c0c0;
+	background-color: #c0c0c0;
+	color: #000;
+	display: block;
+	padding-left: 10px;
+}
+.container-filter1 .mepanel table {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #c0c0c0;
+   	display: block;
+   	margin-top: 10px;
+	
 }
 .container-filter1 > li > a{
 	font-family: 'Dosis-Regular';
@@ -226,9 +276,11 @@ h1.b1,h2.b2,h3.b3 {
 	-webkit-transition: color .4s ease-in-out;
 	-o-transition: color .4s ease-in-out;
 }
-.container-filter1 > li > a:hover, .container-filter1 > li > a:hover > .glyphicon{	
+.container-filter1 > li:hover, .container-filter1 > li > a:hover, .container-filter1 > li > a:hover > .glyphicon{	
 	color: #40BC99;
 }
+/*akhir filter*/
+
 /*--- slider-css --*/
 .banner1{
 	background-size:cover;
