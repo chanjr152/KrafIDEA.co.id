@@ -128,7 +128,8 @@ h1.b1,h2.b2,h3.b3 {
     opacity: 0.5;*/
     background-color: #000;
     border-bottom: 1px white;
-    opacity: 0.5;
+    opacity: 0.7;
+    display: block;
 }
 .logo h1 a{
 	color: #F1F1F1;
@@ -137,8 +138,8 @@ h1.b1,h2.b2,h3.b3 {
     font-weight: 100;
     padding: 0.5em 1.3em;
 	text-decoration:none;
-background:#ed645c;	
-display:inline-block;
+	background:#40BC99;	
+	display:inline-block;
 }
 .logo h1 a:hover{
 	text-decoration:none;
@@ -151,28 +152,82 @@ display:inline-block;
   width: 42%;
   display: block;
   float: left;
+
 }
 .top-nav-center {
-  width: 50%;
-  display: block;
+  width: 20%;
+  /*display: block;*/
   float: left;
+  left: 40%;
+  position: absolute;
 }
 .top-nav-right{
-	width: 23%;
-  display: block;
+  width: 38%;
+  /*display: block;*/
   float: right;
 }
 .top-nav-left{
   width: 27%;
-  display: block;
+  /*display: block;*/
   float: left;
+}
+.top-nav-right a {
+	font-family: 'Dosis-Regular';
+	float: right;
+	padding: 38px 20px;
+	font-weight: 600;
+	font-size: 15px;
+	color: white;
+
+}
+.top-nav-right > a:hover, .top-nav-right > a .active{
+    color: #40BC99;
+}
+.top-nav-right input {
+	font-family: 'Dosis-Regular';
+	float: right;
+	margin: 36px 20px;
 }
 .skyblue{
 	float:left;
 }
 .filter1{
-	width: 50%;
-	display: absolute;
+	width: 100%;
+	position: relative;
+	width: 100%;
+	display: block;
+}
+.filter1  ul{
+	margin: auto;
+	max-width: 38%;
+}
+.container-filter1{
+	position: relative;
+	/*width: 50%;*/
+	/*left:  50%;*/
+	/*float: left;*/
+	list-style: none;
+}
+.container-filter1 > li{
+	float: left;
+}
+.container-filter1 > li > a{
+	font-family: 'Dosis-Regular';
+	float: left;
+	padding: 38px 30px;
+	padding: 38px 25px;
+	color: #000;
+	font-size: 15px;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color .4s ease-in-out;
+	-moz-transition: color .4s ease-in-out;
+	-webkit-transition: color .4s ease-in-out;
+	-o-transition: color .4s ease-in-out;
+}
+.container-filter1 > li > a:hover, .container-filter1 > li > a:hover > .glyphicon{	
+	color: #40BC99;
 }
 /*--- slider-css --*/
 .banner1{
