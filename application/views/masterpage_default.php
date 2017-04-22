@@ -38,18 +38,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 		<div class="top-nav-left">
 		       <div class="logo">
 			       	<h1>
-			            <a href="#">KrafIDea.co.id</a>
+			            <a href="#">KrafIDEA.co.id</a>
 			        </h1>
 		       </div>
 		    </div>
 			 <div class="top-nav-center">
 				<ul class="memenu skyblue">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li class="grid"><a href="#">Products</a></li>
-					<li class="grid"><a href="#">Accessories</a></li>
-					<li class="grid"><a href="typo.html">Typo</a></li>
-					<li class="grid"><a href="contact.html">Contact</a></li>					
+					<li class="active"><a href="index.html">Blog</a></li>
+					<li class="grid"><a href="#">Promo</a></li>
+					<li class="grid"><a href="#">Event</a></li>
 				</ul>				
+			 </div>
+			 <div class="top-nav-right">
+			 	<input type="text" placeholder="search" />
+			 	<a href="#">DAFTAR PANEL</a>
+			 	<a href="#">DAFTAR MEMBER</a>
 			 </div>
 </div>
 
