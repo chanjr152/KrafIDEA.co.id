@@ -48,7 +48,7 @@ class Image {
                              <hr style="margin: 5px 0px 1px 0px;">
                              <span class="pric1">interior design, industrial ...</span>
                          </div>
-                         <div style="background: #eee; padding: 3px 0.7em 3px 0.7em; margin: 3px -0.7em -14px -0.7em;">
+                         <div style="background: #eee; padding: 3px 0.7em 3px 0.7em; /*! margin: 3px -0.7em -14px -0.7em; */">
                             <b><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" style="color:#7F7F7F;"></span>
                             99</b>&nbsp;
                             <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
