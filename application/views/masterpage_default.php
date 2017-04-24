@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Lighting A Ecommerce Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<title>KrafIDEA.co.id</title>
 <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" media="all" />
-<link href="<?php echo base_url("assets/css/style.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>	
+<link href="<?php echo base_url("assets/css/style.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
+<link href="<?php echo base_url("assets/css/font-awesome/css/font-awesome.min.css"); ?>"  rel="stylesheet" media="all"/>
 <script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">

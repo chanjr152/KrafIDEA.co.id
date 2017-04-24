@@ -1,4 +1,4 @@
- <div class="clearfix"></div>
+<div class="clearfix"></div>
 <div class="supplier">
 	<div class="supplier-profil">
 		<div class="supplier-logo">
@@ -11,15 +11,16 @@
 		<div class="supplier-record">
 			<div class="supplier-record-container">
 				<label><i class="fa fa-map fa-lg" aria-hidden="true"></i> Bandung, Jawa Barat <br/> Jl. Gatot Subroto No.68</label>
-			
+				
+				<label style="float:right;">240</label>
 				<label><i class="fa fa-eye fa-lg" aria-hidden="true"></i> Display Views</label>
-				<label style="float:  right;">240</label>
-			
+				
+				<label style="float:right;">240</label>
 				<label><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> Appreciations</label>
-				<label style="float:  right;">240</label>
-			
+				
+				<label style="float:right;">240</label>
 				<label><i class="fa fa-sign-language fa-lg" aria-hidden="true"></i> Transactions</label>
-				<label style="float:  right;">240</label>
+				
 			</div>
 		</div>
 		<div class="supplier-contact">
@@ -41,36 +42,100 @@
 		<div class="supplier-produk-container">
 			<div class="produk">
 				<img src="../assets/images/product/img3.jpg">
+				<div class="arrival-info">
+                             <h4>Product #'.1</h4>
+                             <p>Rs '.$listProduct[$idx].'00</p>
+                             <span class="pric1">by</span>
+                             <span>Vendor '.$listProduct[$idx].'</span>
+                             <hr style="margin: 5px 0px 1px 0px;">
+                             <span class="pric1">interior design, industrial ...</span>
+                </div>
 			</div>
 			<div class="produk">
 				<img src="../assets/images/product/img3.jpg">
+				<div class="arrival-info">
+                             <h4>Product #'.1</h4>
+                             <p>Rs '.$listProduct[$idx].'00</p>
+                             <span class="pric1">by</span>
+                             <span>Vendor '.$listProduct[$idx].'</span>
+                             <hr style="margin: 5px 0px 1px 0px;">
+                             <span class="pric1">interior design, industrial ...</span>
+                </div>
 			</div>
 			<div class="produk">
 				<img src="../assets/images/product/img3.jpg">
+				<div class="arrival-info">
+                             <h4>Product #'.1</h4>
+                             <p>Rs '.$listProduct[$idx].'00</p>
+                             <span class="pric1">by</span>
+                             <span>Vendor '.$listProduct[$idx].'</span>
+                             <hr style="margin: 5px 0px 1px 0px;">
+                             <span class="pric1">interior design, industrial ...</span>
+                </div>
 			</div>
 			<div class="produk">
 				<img src="../assets/images/product/img3.jpg">
+				<div class="arrival-info">
+                             <h4>Product #'.1</h4>
+                             <p>Rs '.$listProduct[$idx].'00</p>
+                             <span class="pric1">by</span>
+                             <span>Vendor '.$listProduct[$idx].'</span>
+                             <hr style="margin: 5px 0px 1px 0px;">
+                             <span class="pric1">interior design, industrial ...</span>
+                </div>
 			</div>
+		</div>
+		<div class="supplier-produk-container">
+			<img src="../assets/images/kategori/img-coba.jpg">
+		</div>
+		<div class="supplier-produk-container">
+			<img src="../assets/images/kategori/img-coba1.jpg">
 		</div>
 		<div class="supplier-produk-container">
 			<div class="produk">
 				<img src="../assets/images/product/img3.jpg">
+				<div class="arrival-info">
+                             <h4>Product #'.1</h4>
+                             <p>Rs '.$listProduct[$idx].'00</p>
+                             <span class="pric1">by</span>
+                             <span>Vendor '.$listProduct[$idx].'</span>
+                             <hr style="margin: 5px 0px 1px 0px;">
+                             <span class="pric1">interior design, industrial ...</span>
+                </div>
 			</div>
 			<div class="produk">
 				<img src="../assets/images/product/img3.jpg">
+				<div class="arrival-info">
+                             <h4>Product #'.1</h4>
+                             <p>Rs '.$listProduct[$idx].'00</p>
+                             <span class="pric1">by</span>
+                             <span>Vendor '.$listProduct[$idx].'</span>
+                             <hr style="margin: 5px 0px 1px 0px;">
+                             <span class="pric1">interior design, industrial ...</span>
+                </div>
 			</div>
 			<div class="produk">
 				<img src="../assets/images/product/img3.jpg">
+				<div class="arrival-info">
+                             <h4>Product #'.1</h4>
+                             <p>Rs '.$listProduct[$idx].'00</p>
+                             <span class="pric1">by</span>
+                             <span>Vendor '.$listProduct[$idx].'</span>
+                             <hr style="margin: 5px 0px 1px 0px;">
+                             <span class="pric1">interior design, industrial ...</span>
+                </div>
 			</div>
 			<div class="produk">
 				<img src="../assets/images/product/img3.jpg">
+				<div class="arrival-info">
+                             <h4>Product #'.1</h4>
+                             <p>Rs '.$listProduct[$idx].'00</p>
+                             <span class="pric1">by</span>
+                             <span>Vendor '.$listProduct[$idx].'</span>
+                             <hr style="margin: 5px 0px 1px 0px;">
+                             <span class="pric1">interior design, industrial ...</span>
+                </div>
 			</div>
-		</div>
-		<div class="supplier-produk-container">
-			
-		</div>
-		<div class="supplier-produk-container">
-			
 		</div>
 	</div>
 </div>
