@@ -13,14 +13,20 @@ class Image {
         $result ='';
         $dir = "assets/images/slider/";
         $dirimage = glob($dir.'*.jpg');
+
+        $idx = 0;
         foreach ($dirimage as $key) {
-            $result = $result.
-            ' 
-            <li>
-                    <img src="'.base_url($key).'"  alt="" >    
-            </li>
-            '
-            ;
+            // $result = $result.
+            // ' 
+            //     <img src="'.base_url($key).'"  alt="" >    
+            // '
+            // ;
+            $result = $result.'<div class="mySlides fade">'
+            .'<div class="numbertext">'.$idx.' / 3</div>'
+            .'<img src="'.base_url($key).'" style="width:100%">'
+            .'<div class="text">Caption Text</div>'
+            .'</div>';
+            $idx++;
         }
         return $result;
     }
@@ -37,18 +43,18 @@ class Image {
         foreach ($dirimage as $key) {
             $result = $result.
             ' 
-            <div class="col-md-2 feature-grid" style="border:1px solid #eee; margin:5px 5px 5px 5px;">
+            <div class="col-md-2 feature-grid no-padding" style="border:1px solid #eee; margin:5px 5px 5px 5px;">
                      <a href="product.html"><img src="'.base_url($key).'" alt=""/> 
                          <div class="arrival-info">
                              <h4>Product #'.$listProduct[$idx].'</h4>
-                             <p>Rs '.$listProduct[$idx].'00</p>
+                             <p>Rp '.$listProduct[$idx].'00</p>
                              <span class="pric1">by</span>
                              <!-- <span class="disc">[8% Off]</span> -->
-                             <span>Vendor '.$listProduct[$idx].'</span>
+                             <span class="pric2">Vendor '.$listProduct[$idx].'</span>
                              <hr style="margin: 5px 0px 1px 0px;">
                              <span class="pric1">interior design, industrial ...</span>
                          </div>
-                         <div style="background: #eee; padding: 3px 0.7em 3px 0.7em; margin: 3px -0.7em -14px -0.7em;">
+                         <div style="background: #eee; padding: 3px 0.7em 3px 0.7em; /*! margin: 3px -0.7em -14px -0.7em; */">
                             <b><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" style="color:#7F7F7F;"></span>
                             99</b>&nbsp;
                             <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>

@@ -1,25 +1,24 @@
-
-<div class="slider">
-	<!-- <div class="banner-info">
-                        <ul>
-                            <li class="grid"><a href="#">Home</a></li>
-                            <li class="grid"><a href="#">Products</a></li>
-                            <li class="grid"><a href="#">Accessories</a></li>
-                            <li class="grid"><a href="typo.html">Typo</a></li>
-                            <li class="grid"><a href="contact.html">Contact</a></li>                    
-                        </ul>   
-                    </div>  -->
+<script src="<?php echo base_url("assets/js/bootstrap.js"); ?>" ></script>
+<!-- <div class="slider">
 	  <div class="callbacks_container">
 	     <ul class="rslides" id="slider">
 	     	<?php echo $slide ?>
 	      </ul>
 	  </div>
+ </div> -->
+ <div class="slideshow-container">
+ 	<?php echo $slide ?>
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
  </div>
-<script src="<?php echo base_url("assets/js/bootstrap.js"); ?>" ></script>
-
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
 
 <div class="filter1" >
-		<ul class="container-filter1">
+		<ul class="container-filter1 hidden-xs">
 		<!-- <ul class="memenu skyblue"> -->
 			<li class="grid">
 				<a href="#">Display <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" ></span></a>
@@ -103,7 +102,15 @@
 			<li class="grid"><a href="typo.html">Price <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" ></span></a>
 			</li>					
 		</ul>
+		
+	<div class="scrollmenu text-center visible-xs">
+		<span onclick="openNav('myDisplay')" class="fa fa-desktop" style="padding-left: 10px;"><a href="javascript:void(0)">Display</a></span>
+		<span onclick="openNav('myCategory')" class="fa fa-cubes" style="padding-left: 10px;"><a href="javascript:void(0)">Category</a></span>
+		<span onclick="openNav('myStyle')" class="fa fa-paint-brush" style="padding-left: 10px;"><a href="javascript:void(0)">Style</a></span>
+		<span onclick="openNav('myPrice')" class="fa fa-money" style="padding-left: 10px;"><a href="javascript:void(0)">Price</a></span>
+	</div>
 </div>
+
 <div class="clearfix"></div>
 
 <div class="items">
