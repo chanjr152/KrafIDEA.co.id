@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Lighting A Ecommerce Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<title>KrafIDEA.co.id</title>
 <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo base_url("assets/css/style.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
+<!-- by wiganda -->
 <link href="<?php echo base_url("assets/added/carousel.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
 <link href="<?php echo base_url("assets/added/mobileFilter.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
 <link href="<?php echo base_url("assets/added/mobileMainMenu.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
@@ -15,6 +16,11 @@
 <!-- Ionicons -->
 <link href="<?php echo base_url('assets/ionicons-2.0.1/css/ionicons.min.css') ?>" rel="stylesheet" type="text/css" />
 <script src="<?php echo base_url("assets/js/jQuery-2.1.3.min.js"); ?>" ></script>
+
+ <!-- by debruin -->
+<link href="<?php echo base_url("assets/css/font-awesome/css/font-awesome.min.css"); ?>"  rel="stylesheet" media="all"/>
+<script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script>
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
