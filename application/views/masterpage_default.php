@@ -243,6 +243,14 @@ div.tab button.active {
 	</div>
 </div>
 
+<!-- <div class="header-top hidden-xs" >
+	<div class="top-nav-left">
+		<div class="logo">
+			<h1><a href="#">KrafIDEA.co.id</a></h1>
+		</div>
+	</div>
+</div> -->
+
 <div class="customNav visible-xs">
 	<div class="customNav-logo">
 		KrafIDEA.co.id
