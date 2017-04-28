@@ -62,7 +62,7 @@ class Image {
                             <span class="pull-right" style="margin-bottom: -11px;">#</span>
                          </div>
                          <div class="viw">
-                            <a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                            <a href="detailproduct"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
                          </div>
                      </a>
             </div>
