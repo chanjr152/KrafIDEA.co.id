@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>KrafIDEA.co.id</title>
+<title>krafIDEA.co.id</title>
 <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo base_url("assets/css/style.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
 <!-- by wiganda -->
@@ -139,7 +139,13 @@ div.tab button.active {
 }
 </style>
 </head>
-<body> 
+<body>
+<?php 
+	$controller= $this->uri->segment(1);
+	if($controller != "home"){
+		echo '<div class="page-bg"></div> '; 
+	}
+?>
 <script type="text/javascript" src="<?php echo base_url("assets/added/carousel.js"); ?>" ></script>
 <script type="text/javascript" src="<?php echo base_url("assets/added/mobileFilter.js"); ?>" ></script>
 <script type="text/javascript" src="<?php echo base_url("assets/added/mobileMainMenu.js"); ?>" ></script>
@@ -226,7 +232,7 @@ div.tab button.active {
 <div class="header-top hidden-xs">
 	<div class="top-nav-left">
 		<div class="logo">
-			<h1><a href="#">KrafIDEA.co.id</a></h1>
+			<h1><a href="#">krafIDEA.co.id</a></h1>
 		</div>
 	</div>
 		<div class="top-nav-center">
@@ -253,7 +259,7 @@ div.tab button.active {
 
 <div class="customNav visible-xs">
 	<div class="customNav-logo">
-		KrafIDEA.co.id
+		krafIDEA.co.id
 	</div>
 	<div class="dropdown">
 		<button onclick="myFunction1()" class="dropbtn">icon</button>
