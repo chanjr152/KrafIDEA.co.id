@@ -1,17 +1,20 @@
 var slideIndex = 1;
-showSlides(slideIndex);
+// showSlides(slideIndex);
+if ($("container .slideshow-container").is("visible")) {}
+$('.mySlides:eq(1)').attr("style","display:block;");
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(obj, n) {
+  showSlides(obj, slideIndex += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(obj, n) {
+  showSlides(obj, slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(obj, n) {
+  var ctx = $(obj).closest(".container");
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = $(".mySlides", ctx);
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
