@@ -6,7 +6,7 @@ ul.memenu.skyblue {text-align: center;}
  font-family: 'Dosis-Regular';
  float:left;
  /*padding:38px 30px; default*/
- padding:38px 25px;
+ padding:12px 25px;
  color:#caccce;
  font-weight:600;
  text-decoration:none;
@@ -93,7 +93,7 @@ skyblue .mepanel img:hover,.skyblue form.contact input[type="text"]:focus,.skybl
 .skyblue form.contact input[type="submit"]{background:#0194be}
 @media (max-width: 991px){
 .memenu>li>a {
-    padding: 38px 26px;
+    padding: 12px 26px;
 }
 }
 @media (max-width: 800px){

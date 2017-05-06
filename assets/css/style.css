@@ -9,6 +9,23 @@ body{
     background:#fff;
     font-family: 'Lato', sans-serif;
 }
+
+.page-bg {
+  background-image: url('../images/body-background2.jpg');
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
 body a{
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -121,7 +138,7 @@ h1.b1,h2.b2,h3.b3 {
 /*header tambahan chandra*/
 .header-top {
     width: 100%;
-    height: 99px;
+    height: 51px; /* by pusat */
     position: relative;
     /*top: 7%;*/
     /*left: 5%;*/
@@ -137,7 +154,7 @@ h1.b1,h2.b2,h3.b3 {
     font-family: 'Dosis-Medium';
     font-size: 1.3em;
     font-weight: 100;
-    padding: 0.5em 1.3em;
+    padding: 0.0em 1.3em;
     text-decoration:none;
     background:#40BC99; 
     display:inline-block;
@@ -176,7 +193,7 @@ h1.b1,h2.b2,h3.b3 {
 .top-nav-right a {
     font-family: 'Dosis-Regular';
     float: right;
-    padding: 38px 20px;
+    padding: 12px 20px;
     font-weight: 600;
     font-size: 15px;
     color: white;
@@ -188,7 +205,7 @@ h1.b1,h2.b2,h3.b3 {
 .top-nav-right input {
     font-family: 'Dosis-Regular';
     float: right;
-    margin: 36px 20px;
+    margin: 12px 20px;
 }
 .skyblue{
     float:left;
@@ -297,7 +314,7 @@ h1.b1,h2.b2,h3.b3 {
 	font-family: 'Dosis-Medium';
 	font-size: 15px;
 	float: left;
-    border: 1px solid white;
+    /*border: 1px solid white; by pusat */
 }
 .supplier-logo{
 	padding: 10% 0%;
@@ -370,7 +387,7 @@ h1.b1,h2.b2,h3.b3 {
 /*tambahan detail produk*/
 .container1{
     width: 95%;
-    border: 1px solid white;
+    /*border: 1px solid white; by pusat*/
 }
 .description{
     background: #40BC99;
@@ -571,6 +588,7 @@ h1.b1,h2.b2,h3.b3 {
 .feature-grid {
     position: relative;
     border-bottom: 3px solid #fff;
+ 	background:#fff;   
 /*     padding: 1em; default */
 }
 .feature-grid a {
