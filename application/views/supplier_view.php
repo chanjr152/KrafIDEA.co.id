@@ -1,5 +1,5 @@
 <div class="clearfix"></div>
-<div class="supplier">
+<div class="supplier container hidden-xs">
 	<div class="supplier-profil">
 		<div class="supplier-logo">
 			<img src="<?php echo base_url().'assets/images/logo-ikea.png'; ?>"  class="img-circle">
@@ -139,4 +139,5 @@
 		</div>
 	</div>
 </div>
+<?php $this->load->view("mobile/supplier_mobile"); ?>
 <div class="clearfix"></div>

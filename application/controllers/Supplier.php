@@ -7,12 +7,13 @@ class Supplier extends CI_Controller {
 		parent::__construct();
 		$this->load->library('MasterPage');
 		$this->load->library('Image');
+		$this->load->helper("url");
 	}
 
 	public function index()
 	{
 		$this->masterpage->setMasterPage('masterpage_default');
-		$data['product'] = $this->image->ImageProduct();
+		$data['product'] = $this->image->ImageProduct2();
 		$this->masterpage->addContentPage('supplier_view','Content',$data);
 		$this->masterpage->show();
 	}

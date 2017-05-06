@@ -1,8 +1,10 @@
 <div class="clearfix"></div>
-<div class="supplier">
+
+<div class="supplier container hidden-xs">
 	<div class="supplier-profil">
 		<div class="supplier-logo">
-			<img src="<?php echo base_url().'assets/images/logo-ikea.png'; ?>" class="img-circle">
+<!-- 			<img src="<?php echo base_url().'assets/images/slider/bnr.jpg'; ?>" width="100" height="200" class="img-circle"> -->
+      <img src="<?php echo base_url().'assets/images/logo-ikea.png'; ?>" class="img-circle">
 			<div class="clearfix"></div>
 			<label> WH (Wrong for Hay) </label>
 			<h4>Designer Product</h4>
@@ -153,11 +155,11 @@
 			</div>
 		</div>
 	</div>
-	
 </div>
 <div class="clearfix"></div>
+<?php $this->load->view("mobile/detailproduct_mobile"); ?>
 <script type="text/javascript">
-	$(document).ready(function(){
-		$("#autotext").textfit('bestfit');
-	}
+	// $(document).ready(function(){
+	// 	$("#autotext").textfit('bestfit');
+	// });
 </script>

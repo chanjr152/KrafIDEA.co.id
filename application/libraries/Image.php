@@ -72,4 +72,51 @@ class Image {
         }
         return $result;
     }
+
+    /* untuk di halaman supplier */
+    public function ImageProduct2 ()
+    {
+        $result ='';
+        $dir = "assets/images/product/";
+        $dirimage = glob($dir.'*.jpg');
+        // untuk bagian div class="arrival-info" ntar ngambil dari database terkait info produknya
+
+        $listProduct = $this->CI->Db_common->listProduct();
+        $idx = 0;
+
+        foreach ($dirimage as $key) {
+            $result = $result.
+            ' 
+            <div class="col-xs-6 item-produk-cst">
+                     <a href="product.html"><img src="'.base_url($key).'" alt=""/> 
+                         <div class="item-info-cst">
+                             <h4>Product #'.$listProduct[$idx].'</h4>
+                             <p>Rp '.$listProduct[$idx].'00</p>
+                             <span class="pric1">by</span>
+                             <!-- <span class="disc">[8% Off]</span> -->
+                             <span class="pric2">Vendor '.$listProduct[$idx].'</span>
+                             <hr style="margin: 5px 0px 1px 0px;">
+                             <span class="pric1">interior design, industrial ...</span>
+                         </div>
+                         <div class="item-footer-cst">
+                            <b><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" style="color:#7F7F7F;"></span>
+                            99</b>
+                            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                            789
+                            <span class="pull-right" style="margin-bottom: -11px;">#</span>
+                         </div>
+                         <div class="viw">
+                            <a href="detailproduct"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+                         </div>
+                     </a>
+            </div>
+            '
+            ;
+            $idx++;
+            if ($idx == 4)
+                break;
+        }
+
+        return $result;
+    }
 }
