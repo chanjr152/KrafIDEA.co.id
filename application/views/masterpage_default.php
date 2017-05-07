@@ -9,13 +9,14 @@
 <link href="<?php echo base_url("assets/added/carousel.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
 <link href="<?php echo base_url("assets/added/mobileFilter.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
 <link href="<?php echo base_url("assets/added/mobileMainMenu.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
-<script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script>
+<!-- <script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script> -->
 
 <!-- Font Awesome Icons -->
 <link href="<?php echo base_url('assets/font-awesome-4.3.0/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css" />
 <!-- Ionicons -->
 <link href="<?php echo base_url('assets/ionicons-2.0.1/css/ionicons.min.css') ?>" rel="stylesheet" type="text/css" />
 <script src="<?php echo base_url("assets/js/jQuery-2.1.3.min.js"); ?>" ></script>
+<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>" ></script>
 
  <!-- by debruin -->
 <link href="<?php echo base_url("assets/css/font-awesome/css/font-awesome.min.css"); ?>"  rel="stylesheet" media="all"/>
@@ -30,6 +31,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- <script src="<?php echo base_url("assets/js/simpleCart.min.js");?>" ></script> -->
 <link href= "<?php echo base_url("assets/css/memenu.css"); ?>" rel="stylesheet" type="text/css" media="all"/>
+<link href= "<?php echo base_url("assets/added/komponen/mobile-navbar.css"); ?>" rel="stylesheet" type="text/css" media="all"/>
 <script type="text/javascript" src="<?php echo base_url("assets/js/memenu.js"); ?>" ></script>
 <script>
 	$(document).ready(function(){
@@ -72,12 +74,14 @@ function openCity(evt, cityName) {
     $(evt).addClass("active");
 }
 </script>
+
 <style type="text/css">
 	@media (max-width: 720px){
 		body{
 			font-size: 12px;
 		}
 	}
+
 	.no-padding{
 		padding: 0;
 	}
@@ -254,20 +258,13 @@ function openCity(evt, cityName) {
 	</div>
 </div>
 
-<!-- <div class="header-top hidden-xs" >
-	<div class="top-nav-left">
-		<div class="logo">
-			<h1><a href="#">KrafIDEA.co.id</a></h1>
-		</div>
-	</div>
-</div> -->
-
-<div class="customNav visible-xs">
+<!-- cara lama -->
+<!-- div class="customNav visible-xs">
 	<div class="customNav-logo">
 		krafIDEA.co.id
 	</div>
 	<div class="dropdown">
-		<button onclick="myFunction1()" class="dropbtn">icon</button>
+		<button onclick="myFunction1()" class="dropbtn"><span class="icon-bar">&#9776;</button>
 		<div id="myDropdown" class="dropdown-content">
 			<a href="javascript:void(0)">Blog</a>
 			<a href="javascript:void(0)">Promo</a>
@@ -276,7 +273,7 @@ function openCity(evt, cityName) {
 			<button class="accordion">Dropdown</button>
 			<div class="panel">
 				<div class="vertical-menu">
-					<!-- <a href="#" class="active">Home</a> -->
+					<a href="#" class="active">Home</a>
 					<a href="javascript:void(0)">Link 1</a>
 					<a href="javascript:void(0)">Link 2</a>
 					<a href="javascript:void(0)">Link 3</a>
@@ -288,7 +285,57 @@ function openCity(evt, cityName) {
 			<a href="javascript:void(0)">Daftar Panel</a>
 		</div>
 	</div>
-</div>
+</div -->
+
+<!-- <nav class="navbar navbar-default visible-xs">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="<?=base_url();?>">krafIDEA.co.id</a>
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">Page 2</a></li>
+        	<li><a href="#">Page 3</a></li>
+		</ul>
+	</div>
+</nav> -->
+
+<nav class="navbar navbar-green visible-xs">
+  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="<?=base_url();?>">krafIDEA.co.id</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <!-- <li class="active"><a href="#">Home</a></li> -->
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Promo</a></li>
+        <li><a href="#">Event</a></li>
+        <!-- <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li> -->
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
+    </div>
+</nav>
 
 <div class="clearfix"></div>
 

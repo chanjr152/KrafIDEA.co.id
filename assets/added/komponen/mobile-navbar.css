@@ -1,0 +1,43 @@
+/* bikin sendiri */
+.navbar-green{
+	background-color: #40BC99;
+}
+.navbar-brand{
+	color: #fff;
+}
+.navbar-toggle{
+	border: 1px solid #fff;
+}
+
+.navbar-green .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+/* override bs */
+.navbar{
+	margin-bottom: 0px;
+}
+
+.navbar-collapse{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	/*left: auto;
+	right: 0;*/
+}
+
+.navbar-nav{
+	background-color: #fff;
+	margin: 0;
+	padding: 6px 6px 3px 6px;
+}
+
+.navbar-nav li {
+	margin-bottom: 3px;
+}
+
+.navbar-nav li a{
+	background-color:#f8f8f8;
+	color: #40BC99;
+	/*background-color: #fff;*/
+}
