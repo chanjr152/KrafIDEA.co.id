@@ -16,10 +16,11 @@
 <!-- Ionicons -->
 <link href="<?php echo base_url('assets/ionicons-2.0.1/css/ionicons.min.css') ?>" rel="stylesheet" type="text/css" />
 <script src="<?php echo base_url("assets/js/jQuery-2.1.3.min.js"); ?>" ></script>
+<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>" ></script>
 
  <!-- by debruin -->
 <link href="<?php echo base_url("assets/css/font-awesome/css/font-awesome.min.css"); ?>"  rel="stylesheet" media="all"/>
-<script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script>
+<!-- <script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script> -->
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +31,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- <script src="<?php echo base_url("assets/js/simpleCart.min.js");?>" ></script> -->
 <link href= "<?php echo base_url("assets/css/memenu.css"); ?>" rel="stylesheet" type="text/css" media="all"/>
+<link href= "<?php echo base_url("assets/added/komponen/mobile-navbar.css"); ?>" rel="stylesheet" type="text/css" media="all"/>
 <script type="text/javascript" src="<?php echo base_url("assets/js/memenu.js"); ?>" ></script>
 <script>
 	$(document).ready(function(){
@@ -72,71 +74,78 @@ function openCity(evt, cityName) {
     $(evt).addClass("active");
 }
 </script>
+
 <style type="text/css">
+	@media (max-width: 720px){
+		body{
+			font-size: 12px;
+		}
+	}
+
 	.no-padding{
 		padding: 0;
 	}
 
- /* Style the tab */
-div.tab {
-    float: left;
-    /*border: 1px solid #ccc;*/
-    background-color: #f1f1f1;
-    width: 0;
-    /*height: 300px;*/
-    border-right: solid 1px #ccc;
-    border-top: solid 1px #ccc;
-}
+	/* Style the tab */
+	div.tab {
+	    float: left;
+	    /*border: 1px solid #ccc;*/
+	    background-color: #f1f1f1;
+	    width: 0;
+	    /*height: 300px;*/
+	    border-right: solid 1px #ccc;
+	    border-top: solid 1px #ccc;
+	}
 
-/* Style the buttons inside the tab */
-div.tab button{
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    border: 1px solid #ccc;
-    border-right: none;
-    border-top: none;
-}
+	/* Style the buttons inside the tab */
+	div.tab button{
+	    display: block;
+	    background-color: inherit;
+	    color: black;
+	    padding: 22px 16px;
+	    width: 100%;
+	    border: none;
+	    outline: none;
+	    text-align: left;
+	    cursor: pointer;
+	    transition: 0.3s;
+	    border: 1px solid #ccc;
+	    border-right: none;
+	    border-top: none;
+	}
 
-/* Change background color of buttons on hover */
-div.tab button:hover {
-    background-color: #ddd;
-}
+	/* Change background color of buttons on hover */
+	div.tab button:hover {
+	    background-color: #ddd;
+	}
 
-/* Create an active/current "tab button" class */
-div.tab button.active {
-    /*background-color: #ccc;*/
-    background-color: #fff;
-    /*border-right-color: #fff;
-    border-right-width: 1px;*/
-    margin-left: 1px;
-}
+	/* Create an active/current "tab button" class */
+	div.tab button.active {
+	    /*background-color: #ccc;*/
+	    background-color: #fff;
+	    /*border-right-color: #fff;
+	    border-right-width: 1px;*/
+	    margin-left: 1px;
+	}
 
-/* Style the tab content */
-.tabcontent {
-    float: left;
-    /*padding: 0px 12px; default */
-    padding: 1em;
-    border: 1px solid #ccc;
-    width: 70%;
-    border-left: none;
-    height: 300px;
-    /*margin-left:45%;*/
-    background-color: #fff;
-}
+	/* Style the tab content */
+	.tabcontent {
+	    float: left;
+	    /*padding: 0px 12px; default */
+	    padding: 1em;
+	    border: 1px solid #ccc;
+	    width: 70%;
+	    border-left: none;
+	    height: 300px;
+	    /*margin-left:45%;*/
+	    background-color: #fff;
+	}
 
-/* added */
-.tabcontent h4{
-	border-bottom: solid 1px #ccc;
-	padding: 10px;
-}
+	/* added */
+	.tabcontent h4{
+		border-bottom: solid 1px #ccc;
+		padding: 10px;
+	}
 </style>
 </head>
 <body>
@@ -232,7 +241,7 @@ div.tab button.active {
 <div class="header-top hidden-xs">
 	<div class="top-nav-left">
 		<div class="logo">
-			<h1><a href="#">krafIDEA.co.id</a></h1>
+			<h1><a href="<?=base_url();?>">krafIDEA.co.id</a></h1>
 		</div>
 	</div>
 		<div class="top-nav-center">
@@ -249,20 +258,13 @@ div.tab button.active {
 	</div>
 </div>
 
-<!-- <div class="header-top hidden-xs" >
-	<div class="top-nav-left">
-		<div class="logo">
-			<h1><a href="#">KrafIDEA.co.id</a></h1>
-		</div>
-	</div>
-</div> -->
-
-<div class="customNav visible-xs">
+<!-- cara lama -->
+<!-- div class="customNav visible-xs">
 	<div class="customNav-logo">
 		krafIDEA.co.id
 	</div>
 	<div class="dropdown">
-		<button onclick="myFunction1()" class="dropbtn">icon</button>
+		<button onclick="myFunction1()" class="dropbtn"><span class="icon-bar">&#9776;</button>
 		<div id="myDropdown" class="dropdown-content">
 			<a href="javascript:void(0)">Blog</a>
 			<a href="javascript:void(0)">Promo</a>
@@ -271,7 +273,7 @@ div.tab button.active {
 			<button class="accordion">Dropdown</button>
 			<div class="panel">
 				<div class="vertical-menu">
-					<!-- <a href="#" class="active">Home</a> -->
+					<a href="#" class="active">Home</a>
 					<a href="javascript:void(0)">Link 1</a>
 					<a href="javascript:void(0)">Link 2</a>
 					<a href="javascript:void(0)">Link 3</a>
@@ -283,7 +285,57 @@ div.tab button.active {
 			<a href="javascript:void(0)">Daftar Panel</a>
 		</div>
 	</div>
-</div>
+</div -->
+
+<!-- <nav class="navbar navbar-default visible-xs">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="<?=base_url();?>">krafIDEA.co.id</a>
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">Page 2</a></li>
+        	<li><a href="#">Page 3</a></li>
+		</ul>
+	</div>
+</nav> -->
+
+<nav class="navbar navbar-green visible-xs">
+  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="<?=base_url();?>">krafIDEA.co.id</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <!-- <li class="active"><a href="#">Home</a></li> -->
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Promo</a></li>
+        <li><a href="#">Event</a></li>
+        <!-- <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li> -->
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
+    </div>
+</nav>
 
 <div class="clearfix"></div>
 

@@ -1,0 +1,23 @@
+.mobile-description{
+	background-color: #40BC99;
+	padding: 10px 10px 10px 10px;
+	text-align: justify;
+	border-radius: 20px;
+}
+
+.mobile-ul{
+	padding-left: 10px;
+}
+
+.mobile-spesifikasi{
+	margin-left: 10px;
+}
+
+.mobile-labelmore{
+	background-color: #40BC99;
+	padding: 10px 10px 10px 10px;
+	text-align: justify;
+	border-radius: 20px;
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+}
