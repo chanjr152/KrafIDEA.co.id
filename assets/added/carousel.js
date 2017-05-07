@@ -1,4 +1,5 @@
 var slideIndex = 1;
+
 // showSlides(0);
 $(document).ready(function(){
   $(".slideshow-container").each(function(idx){
@@ -36,8 +37,8 @@ function plusSlides(obj, n) {
   // $('.dot:eq(' + Number(slideIndex-1) + ')').addClass("active");
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(obj, n) {
+  showSlides(obj, slideIndex = n);
 }
 
 function showSlides(n) {
