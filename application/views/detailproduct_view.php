@@ -44,8 +44,8 @@
 		<div class="container1">
 			<div class="slideshow-container">
 			 	<?php echo $product ?>
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<a class="prev" onclick="plusSlides(this, -1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(this, 1)">&#10095;</a>
 			 </div>
 			<div style="text-align:center">
 				<span class="dot" onclick="currentSlide(1)"></span> 

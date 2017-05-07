@@ -9,7 +9,7 @@
 <link href="<?php echo base_url("assets/added/carousel.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
 <link href="<?php echo base_url("assets/added/mobileFilter.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
 <link href="<?php echo base_url("assets/added/mobileMainMenu.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
-<!-- <script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script> -->
+<script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script>
 
 <!-- Font Awesome Icons -->
 <link href="<?php echo base_url('assets/font-awesome-4.3.0/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css" />
@@ -19,7 +19,7 @@
 
  <!-- by debruin -->
 <link href="<?php echo base_url("assets/css/font-awesome/css/font-awesome.min.css"); ?>"  rel="stylesheet" media="all"/>
-<script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script>
+<!-- <script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script> -->
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -73,70 +73,75 @@ function openCity(evt, cityName) {
 }
 </script>
 <style type="text/css">
+	@media (max-width: 720px){
+		body{
+			font-size: 12px;
+		}
+	}
 	.no-padding{
 		padding: 0;
 	}
 
- /* Style the tab */
-div.tab {
-    float: left;
-    /*border: 1px solid #ccc;*/
-    background-color: #f1f1f1;
-    width: 0;
-    /*height: 300px;*/
-    border-right: solid 1px #ccc;
-    border-top: solid 1px #ccc;
-}
+	/* Style the tab */
+	div.tab {
+	    float: left;
+	    /*border: 1px solid #ccc;*/
+	    background-color: #f1f1f1;
+	    width: 0;
+	    /*height: 300px;*/
+	    border-right: solid 1px #ccc;
+	    border-top: solid 1px #ccc;
+	}
 
-/* Style the buttons inside the tab */
-div.tab button{
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    border: 1px solid #ccc;
-    border-right: none;
-    border-top: none;
-}
+	/* Style the buttons inside the tab */
+	div.tab button{
+	    display: block;
+	    background-color: inherit;
+	    color: black;
+	    padding: 22px 16px;
+	    width: 100%;
+	    border: none;
+	    outline: none;
+	    text-align: left;
+	    cursor: pointer;
+	    transition: 0.3s;
+	    border: 1px solid #ccc;
+	    border-right: none;
+	    border-top: none;
+	}
 
-/* Change background color of buttons on hover */
-div.tab button:hover {
-    background-color: #ddd;
-}
+	/* Change background color of buttons on hover */
+	div.tab button:hover {
+	    background-color: #ddd;
+	}
 
-/* Create an active/current "tab button" class */
-div.tab button.active {
-    /*background-color: #ccc;*/
-    background-color: #fff;
-    /*border-right-color: #fff;
-    border-right-width: 1px;*/
-    margin-left: 1px;
-}
+	/* Create an active/current "tab button" class */
+	div.tab button.active {
+	    /*background-color: #ccc;*/
+	    background-color: #fff;
+	    /*border-right-color: #fff;
+	    border-right-width: 1px;*/
+	    margin-left: 1px;
+	}
 
-/* Style the tab content */
-.tabcontent {
-    float: left;
-    /*padding: 0px 12px; default */
-    padding: 1em;
-    border: 1px solid #ccc;
-    width: 70%;
-    border-left: none;
-    height: 300px;
-    /*margin-left:45%;*/
-    background-color: #fff;
-}
+	/* Style the tab content */
+	.tabcontent {
+	    float: left;
+	    /*padding: 0px 12px; default */
+	    padding: 1em;
+	    border: 1px solid #ccc;
+	    width: 70%;
+	    border-left: none;
+	    height: 300px;
+	    /*margin-left:45%;*/
+	    background-color: #fff;
+	}
 
-/* added */
-.tabcontent h4{
-	border-bottom: solid 1px #ccc;
-	padding: 10px;
-}
+	/* added */
+	.tabcontent h4{
+		border-bottom: solid 1px #ccc;
+		padding: 10px;
+	}
 </style>
 </head>
 <body>
@@ -232,7 +237,7 @@ div.tab button.active {
 <div class="header-top hidden-xs">
 	<div class="top-nav-left">
 		<div class="logo">
-			<h1><a href="#">krafIDEA.co.id</a></h1>
+			<h1><a href="<?=base_url();?>">krafIDEA.co.id</a></h1>
 		</div>
 	</div>
 		<div class="top-nav-center">

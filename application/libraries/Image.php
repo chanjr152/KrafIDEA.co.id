@@ -21,7 +21,8 @@ class Image {
             //     <img src="'.base_url($key).'"  alt="" >    
             // '
             // ;
-            $result = $result.'<div class="mySlides fade">'
+            $first = $idx == 0 ? "style='display:block;'" : "";
+            $result = $result.'<div class="mySlides fade" >'
             .'<div class="numbertext">'.$idx.' / 3</div>'
             .'<img src="'.base_url($key).'" style="width:100%">'
             .'<div class="text">Caption Text</div>'
@@ -44,7 +45,7 @@ class Image {
             $result = $result.
             ' 
             <div class="col-md-2 feature-grid no-padding" style="border:1px solid #eee; margin:5px 5px 5px 5px;">
-                     <a href="product.html"><img src="'.base_url($key).'" alt=""/> 
+                     <a href="'.base_url('detailproduct').'"><img src="'.base_url($key).'" alt=""/> 
                          <div class="arrival-info">
                              <h4>Product #'.$listProduct[$idx].'</h4>
                              <p>Rp '.$listProduct[$idx].'00</p>

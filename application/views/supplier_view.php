@@ -41,7 +41,7 @@
 	<div class="supplier-produk">
 		<div class="supplier-produk-container">
 			<div class="produk">
-				<img src="../assets/images/product/img3.jpg">
+				<img src="<?=base_url('assets/images/product/img3.jpg');?>">
 				<div class="arrival-info">
                              <h4>Product #'.1</h4>
                              <p>Rs '.$listProduct[$idx].'00</p>
@@ -52,7 +52,7 @@
                 </div>
 			</div>
 			<div class="produk">
-				<img src="../assets/images/product/img3.jpg">
+				<img src="<?=base_url('assets/images/product/img3.jpg');?>">
 				<div class="arrival-info">
                              <h4>Product #'.1</h4>
                              <p>Rs '.$listProduct[$idx].'00</p>
@@ -63,7 +63,7 @@
                 </div>
 			</div>
 			<div class="produk">
-				<img src="../assets/images/product/img3.jpg">
+				<img src="<?=base_url('assets/images/product/img3.jpg');?>">
 				<div class="arrival-info">
                              <h4>Product #'.1</h4>
                              <p>Rs '.$listProduct[$idx].'00</p>
@@ -74,7 +74,7 @@
                 </div>
 			</div>
 			<div class="produk">
-				<img src="../assets/images/product/img3.jpg">
+				<img src="<?=base_url('assets/images/product/img3.jpg');?>">
 				<div class="arrival-info">
                              <h4>Product #'.1</h4>
                              <p>Rs '.$listProduct[$idx].'00</p>
@@ -86,14 +86,14 @@
 			</div>
 		</div>
 		<div class="supplier-produk-container">
-			<img src="../assets/images/kategori/img-coba.jpg">
+			<img src="<?=base_url('assets/images/kategori/img-coba.jpg');?>">
 		</div>
 		<div class="supplier-produk-container">
-			<img src="../assets/images/kategori/img-coba1.jpg">
+			<img src="<?=base_url('assets/images/kategori/img-coba1.jpg')?>">
 		</div>
 		<div class="supplier-produk-container">
 			<div class="produk">
-				<img src="../assets/images/product/img3.jpg">
+				<img src="<?=base_url('assets/images/product/img3.jpg');?>">
 				<div class="arrival-info">
                              <h4>Product #'.1</h4>
                              <p>Rs '.$listProduct[$idx].'00</p>
@@ -104,7 +104,7 @@
                 </div>
 			</div>
 			<div class="produk">
-				<img src="../assets/images/product/img3.jpg">
+				<img src="<?=base_url('assets/images/product/img3.jpg');?>">
 				<div class="arrival-info">
                              <h4>Product #'.1</h4>
                              <p>Rs '.$listProduct[$idx].'00</p>
@@ -115,7 +115,7 @@
                 </div>
 			</div>
 			<div class="produk">
-				<img src="../assets/images/product/img3.jpg">
+				<img src="<?=base_url('assets/images/product/img3.jpg');?>">
 				<div class="arrival-info">
                              <h4>Product #'.1</h4>
                              <p>Rs '.$listProduct[$idx].'00</p>
@@ -126,7 +126,7 @@
                 </div>
 			</div>
 			<div class="produk">
-				<img src="../assets/images/product/img3.jpg">
+				<img src="<?=base_url('assets/images/product/img3.jpg');?>">
 				<div class="arrival-info">
                              <h4>Product #'.1</h4>
                              <p>Rs '.$listProduct[$idx].'00</p>

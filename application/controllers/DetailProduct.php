@@ -13,6 +13,7 @@ class DetailProduct extends CI_Controller {
 	{
 		$this->masterpage->setMasterPage('masterpage_default');
 		$data['product'] = $this->image->ImageSlider();
+		$data['itemproduct'] = $this->image->ImageProduct2();
 		$this->masterpage->addContentPage('detailproduct_view','Content',$data);
 		$this->masterpage->show();
 	}

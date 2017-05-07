@@ -30,12 +30,12 @@
 		<?php echo $product; ?>
 	</div>
 	<div class="mobile-product-cst col-xs-12">
-		<img src="../assets/images/product/img3.jpg">
+		<img src="<?=base_url('assets/images/product/img3.jpg');?>">
 	</div>
 	<div class="mobile-product-cst col-xs-12">
 		<?php echo $product; ?>
 	</div>
 	<div class="mobile-product-cst col-xs-12">
-		<img src="../assets/images/product/img3.jpg">
+		<img src="<?=base_url('assets/images/product/img3.jpg');?>">
 	</div>
 </div>
