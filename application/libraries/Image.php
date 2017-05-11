@@ -42,9 +42,17 @@ class Image {
         $listProduct = $this->CI->Db_common->listProduct();
         $idx = 0;
         foreach ($dirimage as $key) {
-            $result = $result.
+            $openNewLine = "";
+            $closeNewLine = "";
+            // if ($idx == 0 || $idx%2 == 0) {
+            //     $openNewLine = '<div class="cst-itemCenter">';
+            // }
+            // if ($idx%2 == 1) {
+            //     $closeNewLine = '</div>';
+            // }
+            $result = $result.$openNewLine.
             ' 
-            <div class="col-md-2 feature-grid no-padding" style="border:1px solid #eee; margin:5px 5px 5px 5px;">
+            <div class="col-md-2 feature-grid no-padding" style="border:1px solid #eee; margin:5px 0px 5px 0px;">
                      <a href="'.base_url('detailproduct').'"><img src="'.base_url($key).'" alt=""/> 
                          <div class="arrival-info">
                              <h4>Product #'.$listProduct[$idx].'</h4>
@@ -67,7 +75,7 @@ class Image {
                          </div>
                      </a>
             </div>
-            '
+            '.$closeNewLine
             ;
             $idx++;
         }

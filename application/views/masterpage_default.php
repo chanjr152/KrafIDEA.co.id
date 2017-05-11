@@ -8,7 +8,6 @@
 <!-- by wiganda -->
 <link href="<?php echo base_url("assets/added/carousel.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
 <link href="<?php echo base_url("assets/added/mobileFilter.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
-<link href="<?php echo base_url("assets/added/mobileMainMenu.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
 <!-- <script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script> -->
 
 <!-- Font Awesome Icons -->
@@ -52,27 +51,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  }
 		}
 	});
-
-function openCity(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    $(evt).addClass("active");
-}
 </script>
 
 <style type="text/css">
@@ -81,70 +59,8 @@ function openCity(evt, cityName) {
 			font-size: 12px;
 		}
 	}
-
 	.no-padding{
 		padding: 0;
-	}
-
-	/* Style the tab */
-	div.tab {
-	    float: left;
-	    /*border: 1px solid #ccc;*/
-	    background-color: #f1f1f1;
-	    width: 0;
-	    /*height: 300px;*/
-	    border-right: solid 1px #ccc;
-	    border-top: solid 1px #ccc;
-	}
-
-	/* Style the buttons inside the tab */
-	div.tab button{
-	    display: block;
-	    background-color: inherit;
-	    color: black;
-	    padding: 22px 16px;
-	    width: 100%;
-	    border: none;
-	    outline: none;
-	    text-align: left;
-	    cursor: pointer;
-	    transition: 0.3s;
-	    border: 1px solid #ccc;
-	    border-right: none;
-	    border-top: none;
-	}
-
-	/* Change background color of buttons on hover */
-	div.tab button:hover {
-	    background-color: #ddd;
-	}
-
-	/* Create an active/current "tab button" class */
-	div.tab button.active {
-	    /*background-color: #ccc;*/
-	    background-color: #fff;
-	    /*border-right-color: #fff;
-	    border-right-width: 1px;*/
-	    margin-left: 1px;
-	}
-
-	/* Style the tab content */
-	.tabcontent {
-	    float: left;
-	    /*padding: 0px 12px; default */
-	    padding: 1em;
-	    border: 1px solid #ccc;
-	    width: 70%;
-	    border-left: none;
-	    height: 300px;
-	    /*margin-left:45%;*/
-	    background-color: #fff;
-	}
-
-	/* added */
-	.tabcontent h4{
-		border-bottom: solid 1px #ccc;
-		padding: 10px;
 	}
 </style>
 </head>
@@ -157,81 +73,10 @@ function openCity(evt, cityName) {
 ?>
 <script type="text/javascript" src="<?php echo base_url("assets/added/carousel.js"); ?>" ></script>
 <script type="text/javascript" src="<?php echo base_url("assets/added/mobileFilter.js"); ?>" ></script>
-<script type="text/javascript" src="<?php echo base_url("assets/added/mobileMainMenu.js"); ?>" ></script>
+<!-- <script type="text/javascript" src="<?php echo base_url("assets/added/mobileMainMenu.js"); ?>" ></script> -->
 <!-- <script src="<?php echo base_url("assets/js/responsiveslides.min.js"); ?>"></script> -->
 
-<div id="myDisplay" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">tutup [&times;]</a>
-	<div class="tab">
-		<button class="tablinks" onclick="openCity(this, 'London')">VIEW</button>
-		<!-- <button class="tablinks" onclick="openCity(this, 'Paris')">Paris</button>
-		<button class="tablinks" onclick="openCity(this, 'Tokyo')">Tokyo</button> -->
-	</div>
-
-	<div id="London" class="tabcontent">
-		<h4>Designer</h4>
-		<h4>Artist</h4>
-		<h4>Brand</h4>
-	</div>
-</div>
-
-<div id="myCategory" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">tutup [&times;]</a>
-	<div class="tab">
-		<button class="tablinks" onclick="openCity(this, 'Category')">SHOP</button>
-		<!-- <button class="tablinks" onclick="openCity(this, 'Paris')">Paris</button>
-		<button class="tablinks" onclick="openCity(this, 'Tokyo')">Tokyo</button> -->
-	</div>
-
-	<div id="Category" class="tabcontent">
-		<h4>Furniture</h4>
-		<h4>Accecories</h4>
-		<h4>Artwork/Decorative</h4>
-	</div>
-</div>
-
-<div id="myStyle" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">tutup [&times;]</a>
-	<div class="tab">
-		<button class="tablinks" onclick="openCity(this, 'Style1')">FURNITURE</button>
-		<button class="tablinks" onclick="openCity(this, 'Style2')">ACCECORIES</button>
-		<button class="tablinks" onclick="openCity(this, 'Style3')">ARTWORK/DECORATIVE</button>
-		<!-- <button class="tablinks" onclick="openCity(this, 'Paris')">Paris</button>
-		<button class="tablinks" onclick="openCity(this, 'Tokyo')">Tokyo</button> -->
-	</div>
-
-	<div id="Style1" class="tabcontent">
-		<h4>Chair</h4>
-		<h4>Sofa</h4>
-		<h4>Bench</h4>
-		<h4>Table</h4>
-	</div>
-	<div id="Style2" class="tabcontent">
-		<h4>Easy Chair</h4>
-		<h4>Arm Chair</h4>
-		<h4>Wing Chair</h4>
-	</div>
-	<div id="Style3" class="tabcontent">
-		<!-- <h4>Easy Chair</h4>
-		<h4>Arm Chair</h4>
-		<h4>Wing Chair</h4> -->
-	</div>
-</div>
-
-<div id="myPrice" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">tutup [&times;]</a>
-	<div class="tab">
-		<button class="tablinks" onclick="openCity(this, 'Price1')">PRICE</button>
-		<!-- <button class="tablinks" onclick="openCity(this, 'Paris')">Paris</button>
-		<button class="tablinks" onclick="openCity(this, 'Tokyo')">Tokyo</button> -->
-	</div>
-
-	<div id="Price1" class="tabcontent">
-		<!-- <h4>Designer</h4>
-		<h4>Artist</h4>
-		<h4>Brand</h4> -->
-	</div>
-</div>
+<?php $this->load->view("komponen/filterhomeMobile"); ?>
 
 <!-- </div> -->
  
@@ -258,128 +103,16 @@ function openCity(evt, cityName) {
 	</div>
 </div>
 
-<!-- cara lama -->
-<!-- div class="customNav visible-xs">
-	<div class="customNav-logo">
-		krafIDEA.co.id
-	</div>
-	<div class="dropdown">
-		<button onclick="myFunction1()" class="dropbtn"><span class="icon-bar">&#9776;</button>
-		<div id="myDropdown" class="dropdown-content">
-			<a href="javascript:void(0)">Blog</a>
-			<a href="javascript:void(0)">Promo</a>
-			<a href="javascript:void(0)">Event</a>
-
-			<button class="accordion">Dropdown</button>
-			<div class="panel">
-				<div class="vertical-menu">
-					<a href="#" class="active">Home</a>
-					<a href="javascript:void(0)">Link 1</a>
-					<a href="javascript:void(0)">Link 2</a>
-					<a href="javascript:void(0)">Link 3</a>
-					<a href="javascript:void(0)">Link 4</a>
-				</div>
-			</div>
-
-			<a href="javascript:void(0)">Daftar Member</a>
-			<a href="javascript:void(0)">Daftar Panel</a>
-		</div>
-	</div>
-</div -->
-
-<!-- <nav class="navbar navbar-default visible-xs">
-	<div class="navbar-header">
-		<a class="navbar-brand" href="<?=base_url();?>">krafIDEA.co.id</a>
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-	</div>
-	<div class="collapse navbar-collapse" id="myNavbar">
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#">Page 2</a></li>
-        	<li><a href="#">Page 3</a></li>
-		</ul>
-	</div>
-</nav> -->
-
-<nav class="navbar navbar-green visible-xs">
-  
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="<?=base_url();?>">krafIDEA.co.id</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <!-- <li class="active"><a href="#">Home</a></li> -->
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Promo</a></li>
-        <li><a href="#">Event</a></li>
-        <!-- <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li> -->
-      </ul>
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul> -->
-    </div>
-</nav>
+<?php $this->load->view("komponen/topnavbarMobile"); ?>
 
 <div class="clearfix"></div>
 
 <mp:Content />
 
-
-
 <div class="footer">
 	 <div class="container">
-		 <div class="footer-grids">
-			 <div class="col-md-3 about-us">
-				 <h3>About Us</h3>
-				 <p>Maecenas nec auctor sem. Vivamus porttitor tincidunt elementum nisi a, euismod rhoncus urna. Curabitur scelerisque vulputate arcu eu pulvinar. Fusce vel neque diam</p>
-			 </div>
-			 <div class="col-md-3 ftr-grid">
-					<h3>Information</h3>
-					<ul class="nav-bottom">
-						<li><a href="#">Track Order</a></li>
-						<li><a href="#">New Products</a></li>
-						<li><a href="#">Location</a></li>
-						<li><a href="#">Our Stores</a></li>
-						<li><a href="#">Best Sellers</a></li>	
-					</ul>					
-			 </div>
-			 <div class="col-md-3 ftr-grid">
-					<h3>More Info</h3>
-					<ul class="nav-bottom">
-						<li><a href="login.html">Login</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="contact.html">Contact</a></li>
-						<li><a href="#">Shipping</a></li>
-						<li><a href="#">Membership</a></li>	
-					</ul>					
-			 </div>
-			 <div class="col-md-3 ftr-grid">
-					<h3>Categories</h3>
-					<ul class="nav-bottom">
-						<li><a href="#">Car Lights</a></li>
-						<li><a href="#">LED Lights</a></li>
-						<li><a href="#">Decorates</a></li>
-						<li><a href="#">Wall Lights</a></li>
-						<li><a href="#">Protectors</a></li>	
-					</ul>					
-			 </div>
+		 <div class="footer-grids text-center">
+			 &copy; krafIDEA.com
 			 <div class="clearfix"></div>
 		 </div>
 	 </div>

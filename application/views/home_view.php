@@ -1,11 +1,6 @@
-<script src="<?php echo base_url("assets/js/bootstrap.js"); ?>" ></script>
-<!-- <div class="slider">
-	  <div class="callbacks_container">
-	     <ul class="rslides" id="slider">
-	     	<?php echo $slide ?>
-	      </ul>
-	  </div>
- </div> -->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url("assets/added/page/homeMobile.css"); ?>">
+<script type="text/javascript" src="<?php echo base_url("assets/added/page/homeMobile.js"); ?>" ></script>
+
 <div class="slideshow-container">
 	<?php echo $slide ?>
 	<a class="prev" onclick="plusSlides(this, -1)">&#10094;</a>
@@ -104,10 +99,7 @@
 		</ul>
 		
 	<div class="scrollmenu text-center visible-xs">
-		<span onclick="openNav('myDisplay')" class="fa fa-desktop" style="padding-left: 10px;"><a href="javascript:void(0)">Display</a></span>
-		<span onclick="openNav('myCategory')" class="fa fa-cubes" style="padding-left: 10px;"><a href="javascript:void(0)">Category</a></span>
-		<span onclick="openNav('myStyle')" class="fa fa-paint-brush" style="padding-left: 10px;"><a href="javascript:void(0)">Style</a></span>
-		<span onclick="openNav('myPrice')" class="fa fa-money" style="padding-left: 10px;"><a href="javascript:void(0)">Price</a></span>
+		<span onclick="openNav('myFilter')" class="fa fa-filter"><a href="javascript:void(0)">Filter</a></span>
 	</div>
 </div>
 

@@ -2367,7 +2367,7 @@ position: absolute;
 }
 @media (max-width: 768px){
 .feature-grid {
-    width: 45%;
+    width: 49%;
     margin: 1em 1em;
 }
 .viw {
@@ -2513,7 +2513,7 @@ span.item_price {
     width: 94%;
 }
 .feature-grid {
-    width: 46%;
+    width: 49%;
     margin:1em 0.5em;
 }
 .offers h3 {
@@ -2709,7 +2709,7 @@ input.item_add.items {
   margin: 1em;
 }
 .feature-grid {
-    width: 100%;
+/*     width: 100%; */
     margin: 1em 0em 1.5em;
 }
 .viw {
