@@ -433,6 +433,141 @@ h1.b1,h2.b2,h3.b3 {
 }
 /*akhir*/
 
+/*css for user*/
+.container-user{
+  width: 100%;
+  background-color: #40BC99;
+  opacity: 0.9;
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom:  2%;
+  font-family: 'Dosis-Medium';
+}
+.row{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.signupPage{
+  padding-top: 2%;
+}
+.floatmiddle{
+  margin: 0 auto;
+  display: block;
+  width: 30%;
+}
+.flexRow {
+    width: 100%;
+    display: flex;
+}
+.steps {
+    border-radius: 20%;
+    background-color: #ffffff;
+    padding: 10px 17px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Dosis-Medium;
+    box-shadow: 0px 0px 10px #ffffff;
+}
+.stepsCheck {
+    border-radius: 20%;
+    background-color: #8ee80e;
+    padding: 10px 15px;
+    font-size: 50px;
+    /*font-weight: ;*/
+    font-family: Dosis-Medium;
+    box-shadow: 0px 0px 10px #ffffff;
+    color: #ffffff;
+}
+.outSteps{
+  opacity: .5;
+}
+
+.dashed {
+    margin: 0px 5px 0px 5px;
+    border: none;
+    border-top: 3px dotted #ffffff;
+    height: 1px;
+    width: 85%;
+    margin-top: 25px;
+}
+
+.marginTop2P{
+  margin-top: 2%;
+}
+.floatCenter {
+    margin: 0 auto;
+    display: table;
+}
+.containerSpan {
+    width: 50%;
+    margin-top: 8px;
+}
+.containerSpan-div {
+    background-color: white;
+    border-radius: 1%;
+    box-shadow: 0px 0px 10px #ffffff;
+    color: #919393;
+}
+.formGroup{
+  margin-bottom: 15px;
+}
+.paddingTop6P{
+  padding-top: 6%;
+}
+.paddingTop4P{
+  padding-top: 4%;
+}
+h4.heading{
+    .font-family: Dosis-Medium;
+    font-size: 28px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 200;
+}
+p.heading{
+    .font-family: Dosis-Medium;
+    font-size: 20px;
+    font-weight: 200;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 100;
+}
+.margin_x8x8 {
+    margin: auto 8% auto 8%;
+}
+.formInput {
+    border-width: 0 0 2px 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Dosis-Medium;
+    outline: none;
+    box-shadow: none;
+}
+.margin_48x8 {
+    margin: 4% 8% auto 8% !important;
+}
+.paddingBottom6P{
+  padding-bottom: 6%;
+}
+.textCenter{
+  text-align: center;
+}
+.btn-Span {
+    font-family: Dosis-Medium;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+}
+.marginTop5P {
+    margin-top: 5%;
+}
+/*end css for user*/
+
+
 /*--- slider-css --*/
 .banner1{
     background-size:cover;

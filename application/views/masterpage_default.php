@@ -67,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <?php 
 	$controller= $this->uri->segment(1);
-	if($controller != "home"){
+	if($controller != ""){
 		echo '<div class="page-bg"></div> '; 
 	}
 ?>
