@@ -151,7 +151,7 @@ function openCity(evt, cityName) {
 <body>
 <?php 
 	$controller= $this->uri->segment(1);
-	if($controller != "home"){
+	if($controller != ""){
 		echo '<div class="page-bg"></div> '; 
 	}
 ?>
