@@ -1,0 +1,16 @@
+.feature-grid a{
+	color: #333;
+}
+.container .items-sec{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/* plan B */
+/*@media (max-width: 767px){
+	.cst-itemCenter{
+		display: flex;
+		justify-content: space-between;
+	}
+}*/
