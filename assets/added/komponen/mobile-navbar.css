@@ -13,6 +13,16 @@
     background-color: #fff;
 }
 
+.navbar-green .navbar-header .cst-btnnavbar{
+	position: relative;
+	padding: 8px 10px;
+	float: right;
+	margin-top: 8px;
+	margin-right: 10px;
+	margin-bottom: 8px;
+	color: white;
+}
+
 /* override bs */
 .navbar{
 	margin-bottom: 0px;

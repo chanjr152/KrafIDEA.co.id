@@ -5,22 +5,17 @@
 <title>krafIDEA.co.id</title>
 <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo base_url("assets/css/style.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
-<!-- by wiganda -->
-<link href="<?php echo base_url("assets/added/carousel.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
-<link href="<?php echo base_url("assets/added/mobileFilter.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
-<!-- <script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script> -->
 
-<!-- Font Awesome Icons -->
-<link href="<?php echo base_url('assets/font-awesome-4.3.0/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css" />
-<!-- Ionicons -->
-<link href="<?php echo base_url('assets/ionicons-2.0.1/css/ionicons.min.css') ?>" rel="stylesheet" type="text/css" />
+<!-- by debruin -->
+<link href="<?php echo base_url("assets/css/font-awesome/css/font-awesome.min.css"); ?>"  rel="stylesheet" media="all"/>
+
+<!-- kebutuhan per page -->
+<link href= "<?php echo base_url("assets/css/memenu.css"); ?>" rel="stylesheet" type="text/css" media="all"/>
+<link href= "<?php echo base_url("assets/added/komponen/mobile-navbar.css"); ?>" rel="stylesheet" type="text/css" media="all"/>
+<link href="<?php echo base_url("assets/added/mobileFilter.css"); ?>"  rel="stylesheet" type="text/css" media="all"/>
+
 <script src="<?php echo base_url("assets/js/jQuery-2.1.3.min.js"); ?>" ></script>
 <script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>" ></script>
-
- <!-- by debruin -->
-<link href="<?php echo base_url("assets/css/font-awesome/css/font-awesome.min.css"); ?>"  rel="stylesheet" media="all"/>
-<!-- <script src="<?php echo base_url("assets/js/jquery.min.js"); ?>" ></script> -->
-
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -29,11 +24,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- <script src="<?php echo base_url("assets/js/simpleCart.min.js");?>" ></script> -->
-<link href= "<?php echo base_url("assets/css/memenu.css"); ?>" rel="stylesheet" type="text/css" media="all"/>
-<link href= "<?php echo base_url("assets/added/komponen/mobile-navbar.css"); ?>" rel="stylesheet" type="text/css" media="all"/>
 <script type="text/javascript" src="<?php echo base_url("assets/js/memenu.js"); ?>" ></script>
 <script>
 	$(document).ready(function(){
+		checkWidth();
+
 		$(".memenu").memenu(); $("a.prev").click();
 		/* DROPDOWN */
 		var acc = document.getElementsByClassName("accordion");
@@ -51,6 +46,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  }
 		}
 	});
+
+	$(window).resize(function(){
+		checkWidth();
+	});
+
+	function checkWidth(){
+		if ($(window).width() < 767) {
+			$("body").css("padding-top","50px");
+		}
+		else{
+			$("body").css("padding-top","0");
+		}
+	}
 </script>
 
 <style type="text/css">
@@ -71,10 +79,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		echo '<div class="page-bg"></div> '; 
 	}
 ?>
-<script type="text/javascript" src="<?php echo base_url("assets/added/carousel.js"); ?>" ></script>
 <script type="text/javascript" src="<?php echo base_url("assets/added/mobileFilter.js"); ?>" ></script>
-<!-- <script type="text/javascript" src="<?php echo base_url("assets/added/mobileMainMenu.js"); ?>" ></script> -->
-<!-- <script src="<?php echo base_url("assets/js/responsiveslides.min.js"); ?>"></script> -->
+<script type="text/javascript" src="<?php echo base_url("assets/added/komponen/mobile-navbar.js"); ?>" ></script>
 
 <?php $this->load->view("komponen/filterhomeMobile"); ?>
 
@@ -83,7 +89,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- all page content inside this div want the side nav to push page content to the right -->
 <div id="main">
 
-<div class="header-top hidden-xs">
+<!-- <div class="header-top hidden-xs">
 	<div class="top-nav-left">
 		<div class="logo">
 			<h1><a href="<?=base_url();?>">krafIDEA.co.id</a></h1>
@@ -101,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<a href="#">DAFTAR PANEL</a>
 		<a href="#">DAFTAR MEMBER</a>
 	</div>
-</div>
+</div> -->
 
 <?php $this->load->view("komponen/topnavbarMobile"); ?>
 

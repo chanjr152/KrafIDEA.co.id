@@ -16,17 +16,17 @@ class Image {
 
         $idx = 0;
         foreach ($dirimage as $key) {
-            // $result = $result.
-            // ' 
-            //     <img src="'.base_url($key).'"  alt="" >    
-            // '
-            // ;
-            $first = $idx == 0 ? "style='display:block;'" : "";
-            $result = $result.'<div class="mySlides fade" >'
-            .'<div class="numbertext">'.$idx.' / 3</div>'
-            .'<img src="'.base_url($key).'" style="width:100%">'
-            .'<div class="text">Caption Text</div>'
-            .'</div>';
+            $result = $result.
+            ' <div class="item">'
+            .'<img src="'.base_url($key).'"  alt="slide-'.$idx.'" style="width:100%;">'
+            .'</div>'
+            ;
+            // $first = $idx == 0 ? "style='display:block;'" : "";
+            // $result = $result.'<div class="mySlides fade" >'
+            // .'<div class="numbertext">'.$idx.' / 3</div>'
+            // .'<img src="'.base_url($key).'" style="width:100%">'
+            // .'<div class="text">Caption Text</div>'
+            // .'</div>';
             $idx++;
         }
         return $result;
