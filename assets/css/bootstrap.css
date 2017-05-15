@@ -2619,10 +2619,12 @@ select[multiple].input-lg,textarea.input-lg {
 	}
 }
 .btn {
-	display:inline-block;
+	/*display:inline-block;*/
+	display: block;
 	padding:6px 12px;
-	margin-bottom:0;
-	font-size:14px;
+	/*margin-bottom:0;*/
+	margin: auto;
+	font-size:15px;
 	font-weight:400;
 	line-height:1.42857143;
 	text-align:center;
@@ -2702,8 +2704,8 @@ a.btn.disabled,fieldset[disabled] a.btn {
 }
 .btn-primary {
 	color:#fff;
-	background-color:#337ab7;
-	border-color:#2e6da4
+	background-color:#40BC99;
+	border-color:#5DE1AA;
 }
 .btn-primary.focus,.btn-primary:focus {
 	color:#fff;
@@ -2712,8 +2714,8 @@ a.btn.disabled,fieldset[disabled] a.btn {
 }
 .btn-primary:hover {
 	color:#fff;
-	background-color:#286090;
-	border-color:#204d74
+	background-color:#16A57D;
+	border-color:#18C292;
 }
 .btn-primary.active,.btn-primary:active,.open>.dropdown-toggle.btn-primary {
 	color:#fff;

@@ -75,11 +75,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <?php 
 	$controller= $this->uri->segment(1);
-	if($controller != "home" && $controller != null){
+	if($controller != ""){
 		echo '<div class="page-bg"></div> '; 
 	}
 ?>
-<!-- <script type="text/javascript" src="<?php echo base_url("assets/added/carousel.js"); ?>" ></script> -->
 <script type="text/javascript" src="<?php echo base_url("assets/added/mobileFilter.js"); ?>" ></script>
 <script type="text/javascript" src="<?php echo base_url("assets/added/komponen/mobile-navbar.js"); ?>" ></script>
 
